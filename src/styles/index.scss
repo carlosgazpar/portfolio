@@ -34,6 +34,7 @@ h1 {
   line-height: 60px;
   font-weight: 300;
   color: white;
+  margin-bottom: 33px;
   span {
     color: $green;
   }
@@ -61,20 +62,33 @@ main {
   padding: 0 20px;
 }
 
-.container{
+.container {
   margin: 90px 0 68px 0;
 }
 
+.profile-container {
+  position: fixed;
+  top: 0;
+  left: 20px;
+}
+
 .portfolio-container {
-width: 100%;
-margin: auto;
-padding: 0 100px;}
+  width: 100%;
+  margin-left: 400px;
+  margin-right: 80px;
+}
 
 @media screen and (max-width: 1220px) {
   main {
     flex-direction: column;
     padding: 0;
   }
+
+  .profile-container {
+    position: relative;
+    left: 0;
+  }
+
   .portfolio-container {
     max-width: 707px;
     margin: auto;
