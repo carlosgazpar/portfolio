@@ -1,7 +1,8 @@
 @import "../variables";
 
 .profile-sidebar {
-  max-width: 350px;
+  max-width: 290px;
+  width: 100%;
   padding: 30px;
   border: 1px solid #565656;
   border-radius: 30px;
@@ -73,5 +74,15 @@
       margin-right: 10px;
       
     }
+  }
+}
+
+
+@media screen and (max-width:1220px) {
+  .profile-sidebar{
+    max-width: 707px;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 }

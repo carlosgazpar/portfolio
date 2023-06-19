@@ -1,3 +1,4 @@
+import ProfileContent from "./components/ProfileContent"
 import ProfileSidebar from "./components/ProfileSidebar"
 
 
@@ -10,7 +11,9 @@ const App = () => {
       <aside className="profile-container">
         <ProfileSidebar/>
       </aside>
-      <div className="portfolio-container"></div>
+      <div className="portfolio-container">
+        <ProfileContent/>
+      </div>
     </main>
     </>
   )
