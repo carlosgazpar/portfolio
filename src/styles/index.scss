@@ -78,6 +78,11 @@ main {
   margin-right: 80px;
 }
 
+.hide{
+  opacity: 0;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1220px) {
   main {
     flex-direction: column;
