@@ -4,7 +4,7 @@ import Breadcrumb from "../common/Breadcrumb";
 const MySkills = () => {
   return (
     <div className="container MySkills-section">
-      <Breadcrumb title="MySkills" icon={faShapes} widthIcon={12} />
+      <Breadcrumb title="MySkills" icon={faShapes} widthIcon={12} id='myskills'/>
       <h1>
         My <span>Advantages</span>
       </h1>

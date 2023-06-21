@@ -4,7 +4,7 @@ import Breadcrumb from "../common/Breadcrumb";
 const Resume = () => {
   return (
     <div className="container Resume-section">
-      <Breadcrumb title="Resume" icon={faBriefcase} widthIcon={12} />
+      <Breadcrumb title="Resume" icon={faBriefcase} widthIcon={12} id='resume'/>
       <h1>
         Education & <span>Experience</span>
       </h1>

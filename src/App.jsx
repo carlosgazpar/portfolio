@@ -1,6 +1,7 @@
 import Loader from "./components/Loader"
 import ProfileContent from "./components/ProfileContent"
 import ProfileSidebar from "./components/ProfileSidebar"
+import Menu from "./components/Menu"
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
   return (
     <>
     <Loader />
+    <Menu />
     <main>
       <aside className="profile-container">
         <ProfileSidebar/>
