@@ -1,5 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import "../styles/components/ContactForm.scss";
+import app from "../helpers/firebase-config";
+import { getDatabase, push, ref } from 'firebase/database'
 
 const ContactForm = () => {
   const validate = (value, id) => {
@@ -27,6 +29,19 @@ const ContactForm = () => {
     return errorMessage;
   };
 
+  const handleSubmit = (values, resetForm) => {
+    const database = getDatabase(app)
+    const databaseRef = ref(database, 'form')
+    const pushDatabase = push(databaseRef, values)
+
+    pushDatabase.then(() => {
+      resetForm()
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+  }
+
   return (
     <Formik
       initialValues={{
@@ -36,8 +51,8 @@ const ContactForm = () => {
         subject: "",
         message: "",
       }}
-      onSubmit={(values) => {
-        alert(JSON.stringify(values));
+      onSubmit={(values, { resetForm }) => {
+        handleSubmit(values, resetForm)
       }}
     >
       <Form className="contact-form">
