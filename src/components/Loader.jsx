@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/components/Loader.scss";
 
 const Loader = () => {
 
   const [isLoading, setIsLOading] = useState(true)
 
-  window.addEventListener('load', () => {
-    setIsLOading(false)
-  })
+  useEffect(() => {
+    setTimeout(() => [
+      setIsLOading(false)
+    ], 1300)
+  }, [])
 
   return (
     <div className={`loader ${!isLoading && 'hide'}`}>
