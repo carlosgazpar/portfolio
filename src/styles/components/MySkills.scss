@@ -1,0 +1,54 @@
+@import '../variables';
+.MySkills-content{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px 24px;
+  .MySkills-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    &:hover{
+      .MySkills-img{
+        border-color: $green;
+        img{
+          filter: drop-shadow(0px 0px 0px $green);
+        }
+      }
+    }
+    .MySkills-img{
+      border: 2px solid #565656;
+      border-radius: 100%;
+      padding: 54px;
+      margin-bottom: 20px;
+      img{
+        filter: grayscale(0);
+      }
+    }
+    p{
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px){
+  .MySkills-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .MySkills-item{
+      display: flex;
+    }
+  }
+} 
+
+@media screen and (max-width: 450px){
+  .MySkills-content{
+    .MySkills-item{
+      .MySkills-img{
+        padding: 24px;
+      }
+    }
+  }
+} 
