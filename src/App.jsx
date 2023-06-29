@@ -3,6 +3,7 @@ import ProfileContent from "./components/ProfileContent"
 import ProfileSidebar from "./components/ProfileSidebar"
 import Menu from "./components/Menu"
 import MenuDrawer from "./components/MenuDrawer"
+import SwitchLanguage from "./components/SwitchLanguage"
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
     <Loader />
     <MenuDrawer />
     <Menu />
+    <SwitchLanguage />
     <main>
       <aside className="profile-container">
         <ProfileSidebar/>
