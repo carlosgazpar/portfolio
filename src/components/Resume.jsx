@@ -29,8 +29,6 @@ const Resume = () => {
             description: 'Protection of Magistrates of the Federal Government.',
           }
         ]} />
-      </div>
-      <div className="Resume-timeline">
         <ResumeItem date='2017 - 2019' experiences={[
           {
             title: 'Judicial Power of the Federation.', 
@@ -51,8 +49,6 @@ const Resume = () => {
             description: 'Protection of Real Estate, Assets and Officials of the Federal Government.',
           }
         ]} />
-      </div>
-      <div className="Resume-timeline">
         <ResumeItem date='2007 - 2014' experiences={[
           {
             title: 'Federal Public Security Secretary.', 
