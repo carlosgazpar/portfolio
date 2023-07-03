@@ -4,13 +4,14 @@ import ProfileSidebar from "./components/ProfileSidebar"
 import Menu from "./components/Menu"
 import MenuDrawer from "./components/MenuDrawer"
 import SwitchLanguage from "./components/SwitchLanguage"
+import { Suspense } from "react"
 
 
 const App = () => {
 
 
   return (
-    <>
+    <Suspense fallback='loading'>
     <Loader />
     <MenuDrawer />
     <Menu />
@@ -23,7 +24,7 @@ const App = () => {
         <ProfileContent/>
       </div>
     </main>
-    </>
+    </Suspense>
   )
 }
 
