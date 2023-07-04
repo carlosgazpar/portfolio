@@ -5,28 +5,30 @@ import { getDatabase, push, ref } from "firebase/database";
 import Notification from "../common/Notification";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
   const [IsNotificationVisible, setIsNotificationVisible] = useState(false);
+  const { t } = useTranslation()
 
   const validate = (value, id) => {
     let errorMessage;
 
     if (!value && id !== "phone") {
-      errorMessage = "Please fill out this field.";
+      errorMessage = t("errorMessage1");
       return errorMessage;
     }
 
     if (id === "phone") {
       if (/\D/g.test(value)) {
-        errorMessage = "Invalid phone number";
+        errorMessage = t("errorMessage2");
         return errorMessage;
       }
     }
 
     if (id === "email") {
       if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-        errorMessage = "Invalid email address";
+        errorMessage = t("errorMessage3");
         return errorMessage;
       }
     }
@@ -69,12 +71,12 @@ const ContactForm = () => {
         <Form className="contact-form">
           <div className="contact-form-item">
             <label htmlFor="fullName">
-              Full Name <span>*</span>
+              {t("fullName")} <span>*</span>
             </label>
             <Field
               id="fullName"
               name="fullName"
-              placeholder="Your Full Name"
+              placeholder={t("fullNamePlaceholder")}
               validate={(value) => validate(value, "fullName")}
             />
             <span className="contact-form-error">
@@ -84,12 +86,12 @@ const ContactForm = () => {
 
           <div className="contact-form-item">
             <label htmlFor="email">
-              Email <span>*</span>
+              {t("email")} <span>*</span>
             </label>
             <Field
               id="email"
               name="email"
-              placeholder="Your email Address"
+              placeholder={t("EmailAddressPlaceholder")}
               type="email"
               validate={(value) => validate(value, "email")}
             />
@@ -100,11 +102,11 @@ const ContactForm = () => {
 
           <div className="contact-form-item">
             {" "}
-            <label htmlFor="phone">Phone (optional)</label>
+            <label htmlFor="phone">{t("Phone")}</label>
             <Field
               id="phone"
               name="phone"
-              placeholder="Your number phone"
+              placeholder={t("PhonePlaceholder")}
               type="tel"
               validate={(value) => validate(value, "phone")}
             />
@@ -115,12 +117,12 @@ const ContactForm = () => {
 
           <div className="contact-form-item">
             <label htmlFor="subject">
-              Subject <span>*</span>
+              {t("subject")}<span>*</span>
             </label>
             <Field
               id="subject"
               name="subject"
-              placeholder="Your subject"
+              placeholder={t("SubjectPlaceholder")}
               validate={(value) => validate(value, "subject")}
             />
             <span className="contact-form-error">
@@ -129,12 +131,12 @@ const ContactForm = () => {
           </div>
           <div className="contact-form-item">
             <label htmlFor="message">
-              Message <span>*</span>
+              {t("message")} <span>*</span>
             </label>
             <Field
               id="message"
               name="message"
-              placeholder="Write your message here..."
+              placeholder={t("messagePlaceholder")}
               as="textarea"
               validate={(value) => validate(value, "message")}
             />
@@ -144,7 +146,7 @@ const ContactForm = () => {
           </div>
 
           <button className="button" type="submit">
-            Submit
+            {t("submit")}
           </button>
         </Form>
       </Formik>
