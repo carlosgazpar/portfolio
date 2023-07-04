@@ -29,6 +29,23 @@
   "introduceTitle" : "Introduce",
   "introduceH1" : "Say Hi from",
   "introduceh1" : "Front-end Developer.",
-  "introduceParagraph" : "I specialize in creating elegant and modern websites, online virtual stores. My passion is development digital user experiences through a bold interface and meaningful interactions."
-  }
+  "introduceParagraph" : "I specialize in creating elegant and modern websites, online virtual stores. My passion is development digital user experiences through a bold interface and meaningful interactions.",
+  "menuTitleH" : "Home",
+  "menuTitleA" : "About",
+  "menuTitleR" : "Resume",
+  "menuTitleM" : "My Skills",
+  "menuTitleP" : "Portfolio",
+  "menuTitleC" : "Contact",
+  "resumeTitle" : "Resume",
+  "resumeH1" : "Education &",
+  "resumeh1" : "Experience.",
+  "resumeItemDate" : "June 2022 - Present.",
+  "resumeItemTitle" : "Front-End Developer.",
+  "resumeItemDescription" : "Freelance",
+  "resumeItemDate1" : "2019 - February 2023.",
+  "resumeItemTitle1" : "Judicial Power of the Federation.",
+  "resumeItemDescription1" : "Specialized Analyst.",
+  "resumeItemTitle2" : "Council of the Federal Judicature.",
+  "resumeItemDescription2" : "Protection of Magistrates of the Federal Government."  
+}
   

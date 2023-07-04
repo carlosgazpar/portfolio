@@ -29,5 +29,22 @@
   "introduceTitle" : "Introducción",
   "introduceH1" : "Saludos De",
   "introduceh1" : "Desarrollador Front-End.",
-  "introduceParagraph" : "Me especializo en la creación de sitios web elegantes y modernos, tiendas virtuales en línea. Mi pasión es desarrollar experiencias de usuario digitales a través de una interfaz audaz e interacciones significativas."
+  "introduceParagraph" : "Me especializo en la creación de sitios web elegantes y modernos, tiendas virtuales en línea. Mi pasión es desarrollar experiencias de usuario digitales a través de una interfaz audaz e interacciones significativas.",
+  "menuTitleH" : "Casa",
+  "menuTitleA" : "Acerca De",
+  "menuTitleR" : "Curriculum",
+  "menuTitleM" : "Mis Habilidades",
+  "menuTitleP" : "Mis Proyectos",
+  "menuTitleC" : "Contacto",
+  "resumeTitle" : "Curriculum",
+  "resumeH1" : "Educación & ",
+  "resumeh1" : "Experiencia.",
+  "resumeItemDate" : "Junio 2022 - Presente.",
+  "resumeItemTitle" : "Desarrollador Front-End.",
+  "resumeItemDescription" : "Trabajador Independiente.",
+  "resumeItemDate1" : "2019 - Febrero 2023.",
+  "resumeItemTitle1" : "Poder Judicial de la Federación.",
+  "resumeItemDescription1" : "Analista Especializado.",
+  "resumeItemTitle2" : "Consejo de la Judicatura Federal.",
+  "resumeItemDescription2" : "Protección de los Magistrados del Gobierno Federal."  
 }
