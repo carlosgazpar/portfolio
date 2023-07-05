@@ -47,13 +47,12 @@ const Resume = () => {
           date="2017 - 2019"
           experiences={[
             {
-              title: "Judicial Power of the Federation.",
-              description: "Middle Management Assistant.",
+              title: t("resumeItemTitle3"),
+              description: t("resumeItemDescription3"),
             },
             {
-              title: "Electoral Tribunal of the Federal Judiciary.",
-              description:
-                "Protection of Magistrates of the Federal Government.",
+              title: t("resumeItemTitle4"),
+              description: t("resumeItemDescription4"),
             },
           ]}
         />
@@ -61,13 +60,12 @@ const Resume = () => {
           date="2014 - 2017"
           experiences={[
             {
-              title: "Judicial Power of the Federation.",
-              description: "Security Officer.",
+              title: t("resumeItemTitle5"),
+              description: t("resumeItemDescription5"),
             },
             {
-              title: "Electoral Tribunal of the Federal Judiciary.",
-              description:
-                "Protection of Real Estate, Assets and Officials of the Federal Government.",
+              title: t("resumeItemTitle6"),
+              description: t("resumeItemDescription6"),
             },
           ]}
         />
@@ -75,13 +73,12 @@ const Resume = () => {
           date="2007 - 2014"
           experiences={[
             {
-              title: "Federal Public Security Secretary.",
-              description: "Personal Security to Government Officials.",
+              title: t("resumeItemTitle7"),
+              description: t("resumeItemDescription7"),
             },
             {
-              title: "Federal Protection Service.",
-              description:
-                "Intramural Guard in Federal Buildings and Strategic Facilities.",
+              title: t("resumeItemTitle8"),
+              description: t("resumeItemDescription8"),
             },
           ]}
         />
@@ -89,18 +86,16 @@ const Resume = () => {
           date="1999 - 2007"
           experiences={[
             {
-              title: "Secretariat of Finance and Public Credit.",
-              description: "Federal Tax Police.",
+              title: t("resumeItemTitle9"),
+              description: t("resumeItemDescription9"),
             },
             {
-              title: "General Administration of Customs.",
-              description:
-                "Review of Foreign trade merchandise for the payment of taxes.",
+              title: t("resumeItemTitle10"),
+              description:t("resumeItemDescription10"),
             },
             {
-              title: "Tax Administration Service (SAT).",
-              description:
-                "Review of petitions in different Customs of the country, checking the import or export of merchandise and vehicles, complying with the payment of taxes.",
+              title: t("resumeItemTitle11"),
+              description: t("resumeItemDescription11"),
             },
           ]}
         />

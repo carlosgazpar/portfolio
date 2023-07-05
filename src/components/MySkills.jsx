@@ -1,6 +1,7 @@
 import Breadcrumb from "../common/Breadcrumb";
 import MySkillsItem from "../common/MySkillsItem";
 import { faShapes } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 import ReactImg from '../assets/img/react.svg'
 import FirebaseImg from '../assets/img/firebase.png'
@@ -11,14 +12,16 @@ import GitImg from '../assets/img/logo-git.png'
 import GithubImg from '../assets/img/github.png'
 import BashImg from '../assets/img/bash-logo-2.png'
 
+
 import '../styles/components/MySkills.scss'
 
 const MySkills = () => {
+  const { t } = useTranslation();
   return (
     <div className="container MySkills-section">
-      <Breadcrumb title="MySkills" icon={faShapes} widthIcon={12} id='myskills'/>
+      <Breadcrumb title={t("mySkillsTitle")} icon={faShapes} widthIcon={12} id='myskills'/>
       <h1>
-        My <span>Advantages</span>
+        {t("mySkillsH1")} <span>{t("mySkillsSpan")}</span>
       </h1>
       <div className="MySkills-content">
         <MySkillsItem img={ReactImg} title='React' />

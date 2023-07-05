@@ -102,11 +102,11 @@ const ContactForm = () => {
 
           <div className="contact-form-item">
             {" "}
-            <label htmlFor="phone">{t("Phone")}</label>
+            <label htmlFor="phone">{t("phone")}</label>
             <Field
               id="phone"
               name="phone"
-              placeholder={t("PhonePlaceholder")}
+              placeholder={t("phonePlaceholder")}
               type="tel"
               validate={(value) => validate(value, "phone")}
             />
