@@ -108,12 +108,18 @@ main {
 .portfolio-container {
   width: 100%;
   margin-left: 400px;
-  margin-right: 80px;
+  margin-right: 300px;
 }
 
 .hide{
   opacity: 0;
   visibility: hidden;
+}
+
+@media screen and (max-width: 1366px) {
+  .portfolio-container {
+    margin-right: 80px;
+  }
 }
 
 @media screen and (max-width: 1220px) {

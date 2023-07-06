@@ -45,7 +45,7 @@ const Portfolio = () => {
           tools={[
             "React.js",
             "Javascript",
-            "Firebas",
+            "Firebase",
             "i18n",
             "SASS",
             "Git",

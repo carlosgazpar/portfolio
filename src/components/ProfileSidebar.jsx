@@ -4,6 +4,7 @@ import '../styles/components/ProfileSidebar.scss'
 import SideBarSocialsItem from "../common/SideBarSocialsItem";
 import Button from "../common/Button";
 import { useTranslation } from 'react-i18next';
+import ProfileImage from '../assets/img/profile-image.jpg'
 
 const ProfileSidebar = () => {
   const { t } = useTranslation()
@@ -11,7 +12,7 @@ const ProfileSidebar = () => {
     <div className="profile-sidebar">
       <p>{t("profileP")}</p>
       <div className="profile-img">
-        <img src="https://media.licdn.com/dms/image/C4E03AQGnqVabawA9SQ/profile-displayphoto-shrink_800_800/0/1654797211167?e=1692230400&v=beta&t=Hh66s0fQFi2Hh8JH92IHrBjeshzHs3MmaOlh9N6sYK4" alt="Juan Carlos Barrios" title="Juan Carlos Barrios"/>
+        <img src={ProfileImage} alt="Juan Carlos Barrios" title="Juan Carlos Barrios"/>
       </div>
       <h2>Juan Carlos Barrios</h2>
       <h2>{t("profileH2")}</h2>
