@@ -45,10 +45,10 @@ const Portfolio = () => {
           tools={[
             "React.js",
             "Javascript",
-            "Vite",
+            "Firebas",
+            "i18n",
             "SASS",
             "Git",
-            "Responsive Design",
           ]}
         />
         <PortfolioItem

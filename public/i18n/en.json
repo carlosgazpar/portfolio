@@ -38,7 +38,7 @@
   "menuTitleC" : "Contact",
   "resumeTitle" : "Resume",
   "resumeH1" : "Education &",
-  "resumeh1" : "Experience.",
+  "resumeh1" : " Experience.",
   "resumeItemDate" : "June 2022 - Present.",
   "resumeItemTitle" : "Front-End Developer.",
   "resumeItemDescription" : "Freelance",
@@ -65,7 +65,7 @@
   "resumeItemDescription10" : "Review of Foreign trade merchandise for the payment of taxes.",
   "resumeItemTitle11" : "Tax Administration Service (SAT).",
   "resumeItemDescription11" : "Review of petitions in different Customs of the country, checking the import or export of merchandise and vehicles, complying with the payment of taxes.",
-  "mySkillsTitle" : "MySkills",
+  "mySkillsTitle" : "My Skills",
   "mySkillsH1" : "My",
   "mySkillsSpan" : "Skills.",
   "portfolioTitle" : "Portfolio",
@@ -78,6 +78,13 @@
   "portfolioItemTitle5" : "SappApp - App Landing Page",
   "profileP" : "Front-End Developer.",
   "profileH2" : "Base in Toluca, Mex.",
-  "profileButton" : "Hire Me!"
+  "profileButton" : "Hire Me!",
+  "menuDrawerItemTitle" : "Menu",
+  "menuDrawerItemH" : "Home",
+  "menuDrawerItemA" : "About",
+  "menuDrawerItemR" : "Resume",
+  "menuDrawerItemM" : "My Skiils",
+  "menuDrawerItemP" : "Portfolio",
+  "menuDrawerItemC" : "Contact"
 }
   

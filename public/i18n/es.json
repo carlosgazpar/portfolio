@@ -78,5 +78,12 @@
   "portfolioItemTitle5" : "SappApp - Página de Aterrizaje.",
   "profileP" : "Desarrollador Front-End.",
   "profileH2" : "Base en Toluca, Mex.",
-  "profileButton" : "Contratame!"
+  "profileButton" : "Contratame!",
+  "menuDrawerItemTitle" : "Menú",
+  "menuDrawerItemH" : "Inicio",
+  "menuDrawerItemA" : "Acerca De",
+  "menuDrawerItemR" : "Curriculum",
+  "menuDrawerItemM" : "Habilidades",
+  "menuDrawerItemP" : "Portafolio",
+  "menuDrawerItemC" : "Contacto"
 }
